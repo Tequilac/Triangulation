@@ -3,6 +3,7 @@ project(Triangulation)
 set (CMAKE_CXX_STANDARD 14)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m64 -pedantic -Wextra -Wconversion -march=native -Wall -I. -ftest-coverage -fprofile-arcs")
 find_package(OpenCV REQUIRED)
+include_directories(/usr/local/include/opencv4)
 
 enable_testing()
 find_package(GTest REQUIRED)
